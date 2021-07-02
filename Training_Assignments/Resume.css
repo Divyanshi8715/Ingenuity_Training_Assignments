@@ -1,0 +1,26 @@
+body {background: #ececec;}
+h1, h2, h3, h4, h5 {
+  border-bottom: 1px solid #ccc;
+  color: #1a2c94;
+  padding-bottom: 8px;
+}
+.container {
+  margin: auto;
+  width: 350px;
+  text-align: center;
+}
+.listFlex {display: inline; justify-content: center;}*/
+
+
+img {
+  width: 100%;
+}
+.myDiv {
+  border: 2px outset red;
+  background-color: rgb(214, 137, 224);    
+  margin: auto;
+  width: 500px;
+  text-align: center;
+  height:600px;
+
+}

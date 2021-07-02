@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Number Game</title>
+</head>
+<body>
+    <h1>Guess the Number from 1-10</h1>
+    <p>Write ur number from 1-10 inside the box and submit it.</p>
+
+    <div class="form">
+        <label for="guess"></label>
+        Number: <input type="text" id="guess" class="guess" placeholder="Enter number"><br><br>
+       <input type="submit" value="Submit" class="guesses" id="submitGuess"><br><br>        
+    </div>
+
+    <script type="text/javascript">
+
+    var randomNumber=Math.floor(Math.random()*10+1);
+
+    var count=1;
+        document.getElementById("submitGuess").onclick=function(){  
+    var  inputNumber= document.getElementById("guess").value;
+      
+if(inputNumber==randomNumber){
+    
+    alert("Congrats!!! The number "+inputNumber+" you guess is correct :)");
+    
+    confirm("You guess the number in "+count+" guesses. Want to exit?");
+}
+else if(inputNumber<randomNumber){
+            count++;
+   alert(inputNumber+" is less than the gussing number");
+}
+else if(inputNumber>randomNumber){
+    count++;
+    alert(inputNumber+" is greater than the gussing number");
+}
+
+else if(inputNumber==null | inputNumber==undefined | inputNumber==0){
+    alert(" not a number");
+
+}
+else{
+    confirm("You guess the number in "+count+" guesses. Want to exit?");
+}
+}
+    </script>
+    
+    </body>
+</html>
